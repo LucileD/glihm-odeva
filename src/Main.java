@@ -8,7 +8,12 @@ import java.util.HashSet;
 import java.util.Iterator;
 
 public class Main {
-	// Fonction qui prend un fichier en argument et qui construit une liste de String
+	
+	/**
+	* Fonction qui prend un fichier en argument et qui construit une liste de String
+	* @param fichier, le nom du fichier
+	* @return la liste de string contenus dans la fichier
+	**/
 	public static ArrayList<String> getLignes(String fichier){
 		ArrayList<String> lignes = new ArrayList<String>();
 		try{
