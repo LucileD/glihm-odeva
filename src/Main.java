@@ -58,17 +58,9 @@ public class Main {
 		// On parcourt la liste de base
 		ArrayList<String> listeComplete = getLignes("Logs-clients-themes.txt");
 		HashSet listeCategories = new HashSet();
-		listeCategories.add("cat1");
-		listeCategories.add("cat2");
-		listeCategories.add("cat3");
 		
-		//HashSet listeCategories = this.getCategories(listeComplete);
-		//HashSet listeUtilisateurs = this.getUtilisateurs(listeComplete);
-		
-		HashSet listeUtilisateurs = new HashSet();
-		listeUtilisateurs.add("user1");
-		listeUtilisateurs.add("user2");
-		listeUtilisateurs.add("user2");
+		HashSet listeCategories = this.getCategories(listeComplete);
+		HashSet listeUtilisateurs = this.getUtilisateurs(listeComplete);
 		
 		Iterator i = listeUtilisateurs.iterator();
 		Iterator j = listeCategories.iterator();
